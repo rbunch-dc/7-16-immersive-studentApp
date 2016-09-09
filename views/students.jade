@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	ul
+		each theWarriorPoetImOn, i in joeShmoe
+			if i+1 == whoToHighlight
+				li 
+					b #{theWarriorPoetImOn}	
+			else
+				li #{theWarriorPoetImOn}
+
+		//- each animal, i in animals
+		//- 	li #{animal.name}
